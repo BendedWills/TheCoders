@@ -1,159 +1,115 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-<title>The Coders: Coding tutorials & Games</title>
-<meta http-equiv="Content-Type" content="text/html"; charset=UTF-8">
-<meta http-equiv="Content-Type" content="text/html"; charset=iso-8859-1">  
-<meta name="robot" content="All"> 
-<meta name="ROBOTS" content="All"> 
-<meta name="REVISIT-AFTER" content="15 Days"> 
-<meta name="RATING" content="general"> 
-<meta name="DISTRIBUTION" content="global"> 
-<meta name="AUTHOR" content="Bendy Wills"> 
-<meta name="COPYRIGHT" content="Website contents © 2019 to present time: The Coders"> 
-<link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
-</head>
-<body bgcolor="#21599C">
-<link href="menuDrop/dist/css/megafish.css" rel="stylesheet" type="text/css" media="screen">
-<style type="text/css">
-a:link {
-	color: #21599C;
-	text-decoration: none;
-}
-a:visited {
-	text-decoration: none;
-	color: #5D0CCE;
-}
-a:hover {
-	text-decoration: none;
-	color: #0945D1;
-}
-a:active {
-	text-decoration: none;
-}
-</style>
-
-<script src="js/hoverIntent.js"></script>
-<script>
+	<head>
+		<title>The Coders: Programming Tutorials</title>
+		<meta http-equiv="Content-Type" content="text/html"; charset=UTF-8">
+		<meta http-equiv="Content-Type" content="text/html"; charset=iso-8859-1">  
+		<meta name="robot" content="All"> 
+		<meta name="ROBOTS" content="All"> 
+		<meta name="REVISIT-AFTER" content="15 Days"> 
+		<meta name="RATING" content="general"> 
+		<meta name="DISTRIBUTION" content="global"> 
+		<meta name="AUTHOR" content="Bendy Wills"> 
+		<meta name="COPYRIGHT" content="Website contents © 2019 to present time: The Coders"> 
+		<link rel="shortcut icon" href="res/favicon.ico" type="image/x-icon">
+		<link href="css/megafish.css" rel="stylesheet" type="text/css" media="screen">
+	</head>
+	<body bgcolor="#21599C">
+		<style type="text/css">
+			a:link {
+				color: #21599C;
+				text-decoration: none;
+			}
+			a:visited {
+				text-decoration: none;
+				color: #5D0CCE;
+			}
+			a:hover {
+				text-decoration: none;
+				color: #0945D1;
+			}
+			a:active {
+				text-decoration: none;
+			}
+		</style>
+		<script src="js/hoverIntent.js"></script>		<script>
+			(function($){ //create closure so we can safely use $ as alias for jQuery
 
-    (function($){ //create closure so we can safely use $ as alias for jQuery
+			  $(document).ready(function(){
+				
+				var exampleOptions = {
+				  speed: 'fast'
+				}
+				// initialise plugin
+				var example = $('#example').superfish(exampleOptions);
 
-      $(document).ready(function(){
-        
-        var exampleOptions = {
-          speed: 'fast'
-        }
-        // initialise plugin
-        var example = $('#example').superfish(exampleOptions);
+				// buttons to demonstrate Superfish's public methods
+				$('.destroy').on('click', function(){
+				  example.superfish('destroy');
+				});
 
-        // buttons to demonstrate Superfish's public methods
-        $('.destroy').on('click', function(){
-          example.superfish('destroy');
-        });
+				$('.init').on('click', function(){
+				  example.superfish(exampleOptions);
+				});
 
-        $('.init').on('click', function(){
-          example.superfish(exampleOptions);
-        });
+				$('.open').on('click', function(){
+				  example.children('li:first').superfish('show');
+				});
 
-        $('.open').on('click', function(){
-          example.children('li:first').superfish('show');
-        });
+				$('.close').on('click', function(){
+				  example.children('li:first').superfish('hide');
+				});
+			  });
 
-        $('.close').on('click', function(){
-          example.children('li:first').superfish('hide');
-        });
-      });
-
-    })(jQuery);
-
-
-    </script>
-	
-
-<div class="topMenu" id="menuDiv">
-  <div class="wrap">
-    <ul class="sf-menu" id="example">
-      <li> <a href="index.html">&nbsp;<font face="Tahoma" color=white>HOME</font></a> </li>
-      <li> <a> <font face="Tahoma" color=white>Courses</font></a>
-        <div class="sf-mega-wLine">
-          <div class="sf-mega-section">
-            <h2><font face="Tahoma" color=orange>Languages:</font></h2>
-            <ul>
-            <li><a href="html.html"><font face="Tahoma" color=white>HTML</font></a></li><br>
-			<li><a href="css.html"><font face="Tahoma" color=white>CSS</font></a></li><br>
-            <li><a href="jquery.html"><font face="Tahoma" color=white>jQuery</font></a></li><br>
-            <li><a href="java.html"><font face="Tahoma" color=white>Java</font></a></li><br>
-			<li><a href="cpp.html"><font face="Tahoma" color=white>C++</font></a></li><br>
-			<li><a href="c.html"><font face="Tahoma" color=white>C</font></a></li><br>
-			<li><a href="cs.html"><font face="Tahoma" color=white>C#</font></a></li><br>
-			<li><a href="ruby.html"><font face="Tahoma" color=white>Ruby</font></a></li><br>
-			<li><a href="r.html"><font face="Tahoma" color=white>R.</font></a></li><br>
-			<li><a href="sql.html"><font face="Tahoma" color=white>SQL</font></a></li><br>
-			<li><a href="javascript.html"><font face="Tahoma" color=white>JavaScript</font></a></li><br>
-			<li><a href="python.html"><font face="Tahoma" color=white>Python</font></a></li><br>
-			<li><a href="php.html"><font face="Tahoma" color=white>PHP</font></a></li><br>
-			<li><a href="swift.html"><font face="Tahoma" color=white>Swift</font></a></li><br>
-			<li><a href="kotlin.html"><font face="Tahoma" color=white>Kotlin</font></a></li>
-                    </ul>
-					
-          </div>
-		  <div class="Line">
-		  <h2><font face="Tahoma" color=orange>Other:</font></h2>
-		  <ul>
-		  <li><a href="ps.html"><font face="Tahoma" color=white> Photoshop Tutorial</font></a></li><br>
-		  <li><a href="ai.html"><font face="Tahoma" color=white> Adobe Illustrator Tutorial</font></a></li>
-		  </ul>
-		  </div>
-        </div>
-      </li>
-		   <li> <a><font face="Tahoma" color=white>Help</font></a> 
-		<div class="sf-mega">
-            <div class="sf-mega-section">
-		<h2><font face="Tahoma" color=white>Contacts:</font></h2>
-          
-             <a href="mailto:thecodersmail0001@gmail.com" target="_blank"><font face="Tahoma" color=white>Email us</font></a><br>
-          
-	</div>
-	<div> <li> <a href="games.html"><font face="Tahoma" color=white>Games</font></a>
-	<li> <a><font face="Tahoma" color=white>Other</font></a> <div class="sf-mega">
-        <div class="sf-mega-section">
-          <ul> 
-             <li><a href="samples.html" target="_blank" class="current"><font face="Tahoma" color=white>Code Samples</font></a></li><br>
-             <li><a href="errors.html" class="current" target="_blank"><font face="Tahoma" color=white>Funny Errors :)</font></a></li><br>
-			 <li><a onclick="patch();"><font face="Tahoma" color=white>Patch Notes</font></a></li><br>
-          </ul>
-	</div>
-	<div>
-	<font color="#FFFFFF">
-	   
-
-      </div></li>
-	  <br />
-      <i><em><h4>Welcome to...</h4></em></i>
-	  <img src="res/TheCoders.png"><br>
-	  <br>
-	  <h2>Recommended:</h2>
-	  <hr>
-	  <br>
-	  <a href="java.html">
-	  <img style="margin-right:200px;" src="res/javaCup.png" width="300" height="250" alt="Java">
-	  <font face="Tahoma" color="white"><h3>Course: Java programming</h3></font>
-	  </a>
-	  <br>
-	  <a href="talkbot.html">
-	  <img style="margin-right:200px;" src="res/tc.png" width="200" height="150" alt="Java">
-	  <font face="Tahoma" color="white"><h3>Game: TalkBot</h3></font>
-	  </a>
-	  <hr>
-	  <img src="res/pointright.png" height="100">
-	  <center><b><i><font face="Arial" color=white><h4>Copyright 2019 to present time: The Coders</h4></font></i></b></center>
-        </div>
-      </li>
-<br>
-
-
-
-
-</body>
+			})(jQuery);
+		</script>
+		<div class="topMenu" id="menuDiv">
+			<div class="wrap">
+				<ul class="sf-menu" id="example">
+					<li> <a href="index.html">&nbsp;<font face="Tahoma" color=white>Home</font></a> </li>
+					<li> <a> <font face="Tahoma" color=white>Courses</font></a>
+						<div class="sf-mega-wLine">
+							<div class="sf-mega-section">
+								<h2><font face="Tahoma" color=orange>Languages:</font></h2>
+								<ul>
+									<li><a href="java.html"><font face="Tahoma" color=white>Java</font></a></li><br>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <a><font face="Tahoma" color=white>Help</font></a> 
+						<div class="sf-mega">
+							<div class="sf-mega-section">
+								<h2><font face="Tahoma" color=orange>Contacts:</font></h2>
+								<a href="mailto:thecodersmain0001@gmail.com" target="_blank"><font face="Tahoma" color=white>Email us</font></a><br>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		<div>
+		
+		<font color="#FFFFFF">
+		
+		</div></li>
+		<br>
+		<i><em><h4>Welcome to...</h4></em></i>
+		<img src="res/TheCoders.png"><br>
+		
+		<br>
+		<h2>Recommended:</h2>
+		<hr>
+		<br>
+		
+		<a href="java.html">
+			<img style="margin-right:200px;" src="res/javaCup.png" width="300" height="300">
+			<font face="Tahoma" color="white"><h3>Course: Java programming</h3></font>
+		</a>
+		
+		<br>
+		<br>
+		
+		</font>
+	</body>
 </html>
