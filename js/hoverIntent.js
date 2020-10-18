@@ -112,7 +112,3 @@
         return this.on({'mouseenter.hoverIntent':handleHover,'mouseleave.hoverIntent':handleHover}, cfg.selector);
     };
 });
-
-function patch(){
-	alert("Added the new tutorial to the java course\nFixed the multi copyright text on some pages");
-}
